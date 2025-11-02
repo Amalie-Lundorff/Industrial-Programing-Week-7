@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="InventorySystems_Week6.MainWindow"
+        Width="560" Height="440"
+        Title="InventorySystems Week6 - Item Sorter Robot">
+  <StackPanel Margin="16" Spacing="8">
+
+    <!-- Knap til at starte ordrebehandling -->
+    <Button Content="Process Next Order &amp; Pick Items"
+            Click="ProcessNext_OnClick"/>
+
+    <!-- Statusområde -->
+    <TextBlock Text="Status:" FontWeight="Bold" Margin="0,8,0,0"/>
+    <ScrollViewer Height="320">
+      <TextBlock x:Name="StatusMessages"
+                 TextWrapping="Wrap"
+                 FontFamily="Consolas"/>
+    </ScrollViewer>
+
+  </StackPanel>
+</Window>
+
